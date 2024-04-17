@@ -10,5 +10,5 @@ git push -u origin main
 
 //…or push an existing repository from the command line
 git remote add origin https://github.com/Satyammishra8127/JavascriptArray.git
-git branch -M main
-git push -u origin main
+git branch -M satyam
+git push -u origin satyam
