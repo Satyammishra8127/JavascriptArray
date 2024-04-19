@@ -106,18 +106,87 @@
 // }
 // console.log(sumOfAll(10, 20, 30, 40, 50, 60, 70, 80, 90));
 
-let userDetails = {
-  firstName: "satyam",
-  LastName: "Mishra",
-  role: "trainee",
-  logincount: "25",
-  courselist: [],
-  buyCourse: function (coursename) {
-    this.courselist.push(coursename);
-  },
-  getcoursecount: function () {
-    return `${this.firstName} is already opt the course ${this.courselist.length}`;
-  },
-};
-userDetails.buyCourse("I have already purchase the course");
-console.log(userDetails.getcoursecount());
+// let userDetails = {
+//   firstName: "satyam",
+//   LastName: "Mishra",
+//   role: "trainee",
+//   logincount: "25",
+//   courselist: [],
+//   buyCourse: function (coursename) {
+//     this.courselist.push(coursename);
+//   },
+//   getcoursecount: function () {
+//     return `${this.firstName} is already opt the course ${this.courselist.length}`;
+//   },
+// };
+// userDetails.buyCourse("I have already purchase the course");
+// console.log(userDetails.getcoursecount());
+
+// =======================HOF=================
+// ===========================================
+
+// const back = (n) => {
+//   return n ** 2;
+// };
+// function cube(back, n) {
+//   return back(n) * n;
+// }
+// console.log(cube(back, 3));
+
+// function courseName() {
+//   console.log("Welcome to Student");
+// }
+// setTimeout(courseName, 2200);
+
+// setInterval(() => {
+//   console.log("hi Friends");
+// }, 2000);
+1;
+// ================forEach==========
+// =================================
+
+// let arr1 = ["hello", "hi", "hola", "how are u"];
+
+// arr1.forEach((val) => {
+//   return console.log(val);
+// });
+
+// const arr1 = [1, 2, 3, 4, 5, 6];
+// const var1 = arr1.map((val1) => console.log(val1 * val1));
+
+// const arr1 = ["india", "America", "England", "NewZealand"];
+// const result = arr1.filter((message) => message.includes("land"));
+// console.log(result);
+
+// const num = [1, 2, 3, 4, 5, 6];
+// const sum = num.reduce((acc, current) => acc + current, 2);
+// console.log(sum);
+
+// =============Destructuring ,spread and rest operator=======
+// ===========================================================
+
+// const sci = [2.72, 3.14, 9.81, 37, 100, 1000, 345, 445, 466, 56];
+// let [e, pi, g, bt, boilingt] = sci;
+// let [num1, num2, ...rest] = sci;
+// console.log(sci);
+
+// ===============Rest Operator===========
+// ================================
+
+// function sumTwo(...rest) {
+//   let sum = 0;
+//   for (const x of rest) {
+//     sum = sum + x;
+//   }
+//   return sum;
+// }
+// console.log(sumTwo(1, 2, 3, 4, 5, 4, 6, 5, 7, 8, 9));
+
+// ==============Spread Operator========
+// =====================================
+
+// function sumTwo(x, y) {
+//   return x + y;
+// }
+// let vari = [5, 6];
+// console.log(sumTwo(...vari));
